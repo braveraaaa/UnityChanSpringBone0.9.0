@@ -9,7 +9,6 @@ Those changes make easily to configure "spring constant" in Inspector.
 
 ## 使い方/How to Use
 First, you need to import the [UnityChanSpringBone](https://github.com/unity3d-jp/UnityChanSpringBone) in your project.<br>
-And open the (project name)\Library\PackageCache\com.unity.springbone@9415071549 in explorer.<br>
 On the other hand, Download this repositry's "Editor" and "Runtime".<br>
 Replace with (project name)\Library\PackageCache\com.unity.springbone@9415071549\Editor and Runtime.
 

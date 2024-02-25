@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -244,8 +244,8 @@ namespace Unity.Animations.SpringBones
             };
 
             var lengthLimitProperties = new PropertyInfo[] {
-                new PropertyInfo("lengthLimitTargets", "ターゲット"),
-                new PropertyInfo("springForce", "バネ係数"),
+                new PropertyInfo("springConstant", "バネ定数"),
+                new PropertyInfo("lengthLimitTargets", "ターゲット")
             };
 
             var collisionProperties = new PropertyInfo[] {

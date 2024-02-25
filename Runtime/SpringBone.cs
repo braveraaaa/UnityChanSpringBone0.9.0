@@ -30,8 +30,8 @@ namespace Unity.Animations.SpringBones
 
         // Length limits
         public Transform[] lengthLimitTargets;
-        [Range(0f, 1f)]
-        public float springForce = 0.8f;
+        [Range(0f, 1500f)]
+        public float springConstant = 0f;
 
         // Collision
         [Range(0f, 0.5f)]
@@ -411,7 +411,7 @@ namespace Unity.Animations.SpringBones
                 return currTipPos;
             }
 
-            var accelerationMultiplier = springForce * deltaTime * deltaTime;
+            var accelerationMultiplier = springConstant * deltaTime * deltaTime;
             var movement = new Vector3(0f, 0f, 0f);
             for (int targetIndex = 0; targetIndex < targetCount; targetIndex++)
             {

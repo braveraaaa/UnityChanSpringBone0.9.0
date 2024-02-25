@@ -79,7 +79,7 @@ namespace Unity.Animations.SpringBones
                         ratio = 1.01f
                     })
                     .ToArray(),
-                springForce = sourceBone.springForce
+                springConstant = sourceBone.springConstant
             };
         }
 
@@ -117,7 +117,7 @@ namespace Unity.Animations.SpringBones
                 "length limit count",
                 "length limit target",
                 "length limit ratio x N",
-                "springForce",
+                "springConstant",
                 "collider x N"
             };
 

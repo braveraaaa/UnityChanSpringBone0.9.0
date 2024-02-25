@@ -254,7 +254,7 @@ namespace Unity.Animations.SpringBones
             public AngleLimitSerializer zAngleLimits;
             public float angularStiffness;
             public LengthLimitSerializer[] lengthLimits;
-            public float springForce;
+            public float springConstant;
         }
 
         private class SpringBoneSerializer
@@ -553,7 +553,7 @@ namespace Unity.Animations.SpringBones
                 .Select(name => setupMaps.panelColliders[name])
                 .ToArray();
             
-            springBone.springForce = baseData.springForce;
+            springBone.springConstant = baseData.springConstant;
 
             return true;
         }
